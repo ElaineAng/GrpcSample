@@ -1,0 +1,26 @@
+syntax = "proto2";
+
+package ex3;
+
+service Candidate {
+    rpc Answer(AnswerRequest) returns (AnswerReply){}
+    rpc Elaborate(ElaborateRequest) returns (ElaborateReply){}
+}
+
+message AnswerRequest{
+    required string question = 1;
+    required int32 timeout = 2;
+}
+
+message AnswerReply{
+    required string answer = 1;
+}
+
+message ElaborateRequest{
+    required string topic = 1;
+    repeated int64 blah_run = 2;
+}
+
+message ElaborateReply{
+    required string answer = 1;
+}
