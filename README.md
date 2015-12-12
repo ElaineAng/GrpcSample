@@ -2,7 +2,7 @@
 A simple example using grpc with protobuffer 2 in python.
 Make sure to have grpc and protobuffer configured in your system.
 
-grpc github repository is [here]. (https://github.com/grpc/grpc)
+grpc github repository is [here] (https://github.com/grpc/grpc).
 
 # Build:
 Please do all of the following in python2.7 virtual env with proto2.
